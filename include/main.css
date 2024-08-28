@@ -1,0 +1,128 @@
+/**
+	* @file main.css
+	* @author Arya Fardmanesh
+	* @email AryaFardmanesh.1383@gmail.com
+	* @url https://github.com/AryaFardmanesh
+	* @description In this file, basic styles and usage variables are stored.
+**/
+
+/* Start importing fonts */
+/**
+	* @readme ./../fonts/lexend/README.txt
+	* @copyright ./../fonts/lexend/OFL.txt
+	* @url https://fonts.google.com/specimen/Lexend
+**/
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-Black.ttf");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-ExtraBold.ttf");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-SemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-ExtraLight.ttf");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ft-lexend;
+	src: url("./../fonts/lexend/Lexend-Thin.ttf");
+	font-weight: 100;
+	font-style: normal;
+}
+/* Finish importing fonts */
+
+
+/* Start define variables */
+:root {
+	/**
+		* @image ./../img/color-palette/color-palette.jpg
+		* @url https://www.color-hex.com/color-palette/106748
+	**/
+	--color-seasalt: #fafafa;
+	--color-lavender: #e4e5f1;
+	--color-french-gray: #d2d3db;
+	--color-cool-gray: #9394a5;
+	--color-ultra-violet: #484b6a;
+	--color-ultra-violet-60: #484b6a7f;
+
+	--font-lexend: ft-lexend;
+}
+/* Finish define variables */
+
+
+/* Start setting default style */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--color-seasalt);
+
+	/* Font style */
+	font-family: var(--font-lexend);
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	color: black;
+	/* Font style */
+}
+
+button {
+	cursor: pointer;
+}
+
+.display-none {
+	display: none !important;
+}
+
+.drop-shadow {
+	box-shadow: 0 4px 4px 0 #00000019;
+}
+/* Finish setting default style */

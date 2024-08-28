@@ -1,0 +1,94 @@
+<!--
+	@file index.html
+	@author Arya Fardmanesh
+	@description Main page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./../img/logo/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="index.css">
+	<title>Pickit</title>
+</head>
+<body>
+	<div class="container">
+		<nav class="navigation">
+			<img src="./../img/logo/logo.png" alt="The Pickit logo image." class="logo drop-shadow" />
+			<span class="co-name">Pickit</span>
+		</nav>
+
+
+		<div class="container-card">
+			<div class="container-top">
+				<span class="form-title">Generate Random Quote</span>
+
+				<input type="text" id="specify-keyword-input" class="input" placeholder="Include keywords (separate with comma)" spellcheck="false" />
+
+				<div class="container-filters">
+					<div id="btn-author-filter" class="container-filter">
+						<span class="filter-selected" author-name="all" id="filter-author-display-selected">All</span>
+						<img src="./../img/icons/arrow-down.png" alt="Dropmenu icon (Arrow Down)" class="dropmenu-icon" />
+
+						<div class="container-filter-items display-none" id="menu-items-filter-author">
+							<span class="filter-item-input">
+								<input type="search" id="search-author" class="input-search" placeholder="Author name" spellcheck="false" />
+							</span>
+							<span class="filter-item">All</span>
+						</div>
+					</div>
+
+					<div id="btn-tag-filter" class="container-filter">
+						<span class="filter-selected" tag-name="all" id="filter-tag-display-selected">All</span>
+						<img src="./../img/icons/arrow-down.png" alt="Dropmenu icon (Arrow Down)" class="dropmenu-icon" />
+
+						<div class="container-filter-items display-none">
+							<span class="filter-item-input">
+								<input type="search" id="search-context" class="input-search" placeholder="Context..." spellcheck="false" />
+							</span>
+							<span class="filter-item">All</span>
+						</div>
+					</div>
+				</div>
+
+				<button id="btn-generate" class="btn-submit drop-shadow">Generate</button>
+			</div>
+
+			<div class="container-bottom">
+				<!--
+				When we call the createResultBox function it produces output like this:
+
+				<div class="container-result">
+					<div class="container-profile">
+						<img src="./../img/profile/LinusTorvalds.png" alt="Linus Torvalds profile picture." class="profile-image" />
+						<span class="profile-name">Linus Torvalds</span>
+					</div>
+
+					<button class="btn-copy" title="Copy quote text.">
+						<img src="./../img/icons/copy.png" alt="Copy icon." class="copy-icon" />
+					</button>
+
+					<div class="container-quote">
+						<p class="quote-text">
+							I like offending people, because I think people who get offended should be offended.
+						</p>
+					</div>
+
+					<div class="container-tags">
+						<div class="tag">#linus</div>
+						<div class="tag">#succeed</div>
+					</div>
+				</div>
+				-->
+			</div>
+		</div>
+	</div>
+
+	<script src="./../database/database.js"></script>
+	<script src="./index.js"></script>
+	<script src="./models.js"></script>
+	<script src="./../database/data.js"></script>
+</body>
+</html>
